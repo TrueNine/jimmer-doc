@@ -399,7 +399,7 @@ public interface User {
 interface User {
 
     // highlight-next-line
-    @JsonConverter(UserPhoneConverter.class)
+    @JsonConverter(UserPhoneConverter::class)
     val phone: String
 }
 ```
